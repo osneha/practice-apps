@@ -8,6 +8,6 @@ function b()
      const Grandtotal=Total+Tip+Tax;
      document.querySelector('#tip').innerHTML=`$${Tip.toFixed(2)}`
      document.querySelector('#tax').innerHTML=`$${Tax.toFixed(2)}`
-     document.querySelector('#grandtotal').innerHTML=`$${GrandTotal.toFixed(2)}`
+     document.querySelector('#grand-total').innerHTML=`$${GrandTotal.toFixed(2)}`
 }
      document.querySelector('#btn').addEventListener('click',b)
