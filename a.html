@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href ="prac.css">
-    <title>Tip App</title>
-
-</head>
-<body>
-    <main >
-        <h1>Maitre D</h1>
-        <hr>
-        <!-- total-->
-        <label for="total">Total:</label>
-        <input  id="total" type="number" placeholder="Enter a Number" >
-        <br>
-        <!-- rate-->
-        <div class =rateholder><label for="rate">Rate:</label>
-        <input class =input id="rate" type="number" placeholder="Enter a Number">
-        </div>
-        <!-- tip-->
-        <div class = tipholder><p id="tip">Tip: </p></div>
-        <!-- tax-->
-        <p id= "tax">Tax: </p>
-        <p id="calcuation">Grand total:</p>
-        <div class =buttonholder><button class =button id="sumation">Calculate</button></div>
-        <hr>
-    </main>
-
-
-    <script src="b.js"></script>
-
- <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/js/mdb.min.js"></script> 
-</body>
+<html>
+    <head>
+        <title>iOS Practice App</title>
+    </head>
+    <style>
+    </style>
+    <body>
+            <h1 align ="center">Maitre D</h1>
+        <main>
+       <br>
+       <br>
+       <div >
+       <table align ="center">
+        <tr>
+            <td>
+                <label >Total: $</label>
+                <input id="total" type="text"   placeholder="0.00" value="" >
+            </td>
+        </tr>
+            <tr>
+            <td>
+                <label>Tip: </label><span id="tip">$0.00</span>
+            </td>
+            <td>
+                <label >Rate: %</label>
+                <input id="rate" type="field-rate"  placeholder="0.00" value="">
+            </td>
+        </tr>
+       <tr>
+           <td>
+               <label>Tax: <span id="tax">$0.00</span></label>
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Grand Total: <span id="grand-total">$0.00</span></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <button id="btn">Calculate</button>
+            </td>
+        </tr>
+       </table>
+       <br>
+       <br>
+      </main>
+       <script src="b.js"></script>
+    </div>
+    </body>
 </html>
